@@ -11,18 +11,33 @@
 
   <center><h1> ✨Register✨ </h1></center>
   <table border="0" align="center"> 
-    <tr><td><label>Firstname:</label></td></tr>
     <tr><td><input type="text" placeholder="Nombre" required></td></tr>
-    <tr><td><label>Lastname:</label></td></tr>
     <tr><td><input type="text" placeholder="Apellido " required></td></tr>
-    <tr><td><label>Correo electrónico:</label></td></tr>
     <tr><td><input type="email" placeholder="Correo electrónico" required></td></tr>
-    <tr><td><label>Contraseña:</label></td></tr>
     <tr><td><input type="password" placeholder="Contraseña" required></td></tr>
-    <tr><td><label>Confirmar contraseña:</label></td></tr>
     <tr><td><input type="password" placeholder="Confirmar contraseña" required></td></tr>
     <tr><td><button>Register</button></td></tr>
-    <tr><td><span class="link">¿Ya tienes cuenta? <a href="index.html">Inicia sesión</a></span></td></tr>
+    <tr><td><span class="link">¿Ya tienes cuenta? <a href="signin.html">Inicia sesión</a></span></td></tr>
   </table>
+  <style>
+          /* Esto aplica a todos los inputs y botones */
+          input, button {
+              margin: 8px 0;   /* espacio vertical entre casillas */
+              padding: 10px;   /* que no se vean pegados por dentro */
+              width: 250px;    /* mismo ancho bonito */
+          }
+
+          button {
+              background-color: rgb(250, 188, 198); /* color rosado */
+              border: none;
+              border-radius: 8px;
+              cursor: pointer;
+          }
+
+          button:hover {
+              background-color: rgb(241, 151, 151); /* cambia a un rosado más fuerte al pasar el mouse */
+          }
+      </style>
+
 </body>
 </html>
