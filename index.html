@@ -1,19 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- HTML5 -->
+<html lang="es"> <!-- Idioma del documento (puedes usar "es") -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" type="image/png" href="src/icons/market_main.png">
+  <meta charset="UTF-8" /> <!-- Soporta tildes/ñ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Market App - Bienvenido a nuestra plataforma. Regístrate o inicia sesión." />
+  <title>Market App</title> <!-- Título de la pestaña -->
+
+  <!-- Icono de la pestaña -->
+  <link rel="icon" type="image/png" href="src/icons/market_main.png" />
+
+  <style>/* la cara que  le estamos dando */
+    body {
+      /* Centra el texto de todo el body (incluye h1 y enlaces) */
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #e2bbca; /* Fondo rosado kawaii */
+      margin: 0;
+      padding-top: 40px; /* Espacio superior para que no quede tan pegado */
+    }
+
+    /* Contenedor de los enlaces (Sign in | Sign up) */
+    .links {
+      margin-top: 20px; /* Espacio entre el título y los enlaces */
+    }
+
+    /* Estilo para cada enlace */
+    .links a {
+      text-decoration: none; /* Quita el subrayado */
+      color: #e280a8;       /* Color rosado */ 
+      font-weight: bold;     /* Negrita para que resalte */
+      margin: 0 15px;        /* Separación horizontal entre enlaces */
+    }
+
+  </style>
 </head>
-    
+    <body>
+  <!-- Título centrado (gracias al text-align: center del body) -->
+  <h1>Welcome</h1>
 
-<body>
-    <center>Welcome</center>
-    <a href="#" >Sing in</a> &nbsp; | &nbsp;
-    <a href="src/signup.html" >Sing up</a>
-    
-
-</body>
+  <!-- Bloque que agrupa los enlaces.
+       Usar un contenedor nos permite dar estilos sin afectar a todo el body -->
+    <div class="links">
+    <!-- Sign in: por ahora no lleva a ningún lado (#) -->
+    <a href="src/signin.html">Sign in</a> | <a href="src/signup.html">Sign up</a>
+   
+    </body>
 </html>
-
