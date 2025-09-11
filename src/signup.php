@@ -11,6 +11,7 @@ $id_number =$_POST['idnumber'];
 $e_mail =$_POST['email'];
 $p_wd =$_POST['passwo'];
 
+$enc_pass = password_hash($p_wd, PASSWORD_DEFAULT);
 //step 3 query to inset  into 
 
 $query="
@@ -27,7 +28,7 @@ $query="
         '$m_number',
         '$id_number',
         '$e_mail',
-        '$p_wd'
+        '$enc_pass'
         ) "
 ;
 
