@@ -1,40 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✨Inicio de sesion✨</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Market - Register </title>
+        <link rel="icon" type="image/png"href="icon/market_main" >
+    </head>
+    <body>
+        <br>
+       <center><img src="images/user_default.png"width="8%"></center>
+       <form name="login-form" action="signin.php" method="post">
+       <table boder="0" align="center">
+            <tr><td><input type="email" name="email" placeholder="joe@gmail.com" required></td></tr>
+            <tr><td><input type="password" name="passwd" placeholder="*************" required></td></tr>
+            <tr><td align="center"><button>login</button></td></tr>
 
-<body>
-    <center><h1> ✨Inicio de sesión✨ </h1></center>
-    <table border="0" align="center"> 
-        <tr><td><input type="email" placeholder="Correo electrónico" required></td></tr>
-        <tr><td><input type="password" placeholder="Contraseña" required></td></tr>
-        <tr><td><button>Inicio de sesión</button></td></tr>
-        <tr><td><span class="link">¿Olvidaste tu contraseña? <a href="#">Recupérala</a></span></td></tr>
-        <tr><td><span class="link">¿No tienes cuenta? <a href="signup.html">Regístrate</a></span></td></tr>
-    </table>
-
-    <style>
-        /* Esto aplica a todos los inputs y botones */
-        input, button {
-            margin: 8px 0;   /* espacio vertical entre casillas */
-            padding: 10px;   /* que no se vean pegados por dentro */
-            width: 250px;    /* mismo ancho bonito */
-        }
-
-        button {
-            background-color: rgb(238, 167, 179); /* color rosado */
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: rgb(241, 151, 151); /* cambia a un rosado más fuerte al pasar el mouse */
-        }
-    </style>
-</body>
-
+       </table>
+       </form>  
+    </body>
 </html>

@@ -1,50 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="../src/icons/market_main.png">
-  <title>✨Registro✨</title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market - Register </title>
+    <link rel="icon" type="image/png"href="icon/market_main" >
 </head>
-<body>
+    <body>
+        <center><h1>Register</h1></center>
+        <form name="register-form" action="signup.php" method="post">
+        <table align="center"> 
+            <tr><td><label>Firstname:</label><br></td></tr>
+            <tr><td><input type="text" name="fname" placeholder="Firstname" required><br> </td></tr> 
+            <tr><td><label>Lastname:</label><br></td></tr> 
+            <tr><td><input type="text" name= "lname" placeholder="Lastname" required><br> </td></tr> 
+            <tr><td><label>Mobile number:</label><br></td></tr> 
+            <tr><td><input type="text" name="mnumber" placeholder="Mobile number" required><br></td></tr> 
+            <tr><td><label>Identification number:</label><br></td></tr> 
+            <tr><td><input type="text" name="idnumber"placeholder="Identification number" required><br> </td></tr> 
+            <tr><td><label>Email:</label><br> </td></tr> 
+            <tr><td><input type="email" name="email" placeholder="email" required><br></td></tr> 
+            <tr><td><label>Password:</label><br></td></tr> 
+            <tr><td><input type="Password" name="passwd" placeholder="Password" required><br></td></tr> 
+            <tr><td><button>Register</button> </td></tr>
+            </form>
+            
+        </table>
 
-  <center><h1> ✨Register✨ </h1></center>
-  <form name="Register-form" action="signup.php" method="post" > 
+    
 
-  <table border="0" align="center"> 
-    <tr><td><input type="text" name="fname" placeholder="Nombre" required></td></tr>
-    <tr><td><input type="text" name="lname" placeholder="Apellido " required></td></tr>
-    <tr><td><input type="text" name="mnumber" placeholder="Numero de celular " required></td></tr>
-    <tr><td><input type="text" name="idnumber" placeholder="id Numero " required></td></tr>
-    <tr><td><input type="email" name="email" placeholder="Correo electrónico" required></td></tr>
-    <tr><td><input type="password"name="passwo" placeholder="Contraseña" required></td></tr>
-    <tr><td><input type="password"name="passwo" placeholder="Confirmar contraseña" required ></td></tr>
-    <tr><td><button>Register</button></td></tr>
-    <tr><td><span class="link">¿Ya tienes cuenta? <a href="signin.html">Inicia sesión</a></span></td></tr>
-  </table>
-  </form>
-
-  <style>
-          /* Esto aplica a todos los inputs y botones */
-          input, button {
-              margin: 8px 0;   /* espacio vertical entre casillas */
-              padding: 10px;   /* que no se vean pegados por dentro */
-              width: 250px;    /* mismo ancho bonito */
-          }
-
-          button {
-              background-color: rgb(250, 188, 198); /* color rosado */
-              border: none;
-              border-radius: 8px;
-              cursor: pointer;
-          }
-
-          button:hover {
-              background-color: rgb(241, 151, 151); /* cambia a un rosado más fuerte al pasar el mouse */
-          }
-      </style>
-
+    
+    
+    
+    
+    
+    
+    <!-- <input type="submit" value = "register">-->
 </body>
 </html>
-
