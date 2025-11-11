@@ -1,12 +1,15 @@
 <?php
 //step 1. Get database connection
 require('../config/database.php');
+/*
+
 session_start();
 
 if(!isset($_SESSION['session_user_id'])){
      header('refresh:0;url=error_403.html');
 
 }
+     */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,19 +31,20 @@ if(!isset($_SESSION['session_user_id'])){
         <th>Ide. number</th>
         <th>Phone number</th>
         <th>Status</th>
+        <th>Photo</th>
         <th>Options</th>
         
 </tr>
 <?php
-    $sql_users = "
-    select 
+    $sql_users = "select
     u.id as user_id,
     u.firstname ||' '|| u.lastname as full_name, 
     u.email, 
     u.ide_number, 
     u.mobile_number, 
-    case when u.status = true then 'Active' else 'Inactive' end as status 
-    from  users as u ";
+    case when u.status = true then 'Active' else 'Inactive' end as status,
+    u.url_photo
+    from  users as u";
     
     $result = pg_query($conn, $sql_users);
 
@@ -55,6 +59,7 @@ if(!isset($_SESSION['session_user_id'])){
                 <td>".$row['ide_number'] ."</td>
                 <td>".$row['mobile_number'] ."</td>
                 <td>".$row['status'] ."</td>
+                <td align='center'><img src= ".$row['url_photo'] ." width='30'></td>
         <td>
             <a href='#'><img src='icons/lupa.png' width='20'></a>
             <a href='edit_user_form.php?userId=".$row['user_id']."'><img src='icons/lapiz.png' width='20'></a>

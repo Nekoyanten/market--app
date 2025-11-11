@@ -3,7 +3,7 @@
 require('../config/database.php');
 $user_id=$_GET['userId'];
 $sql_get_user = "select * from users where id = $user_id";
-$result = pg_query($conn_supa, $sql_get_user);
+$result = pg_query($conn, $sql_get_user);
 if (!$result){
         die("Error: ". pg_last_error());
     }
@@ -50,6 +50,11 @@ if (!$result){
     name="lname" 
     value="<?php echo $lname?>"
     required/><br><br>
+    
+    <label> User photo  </label><br>
+    <input type ='file' name="photo_user">
+    <br><br>
+    
     <button>Update user</button>
     </form></form>
 </body>
